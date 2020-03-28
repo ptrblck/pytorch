@@ -27,6 +27,7 @@ void initCudartBindings(PyObject* module) {
   cudart.def("cudaProfilerStart", cudaProfilerStart);
   cudart.def("cudaProfilerStop", cudaProfilerStop);
   cudart.def("cudaHostRegister", cudaHostRegister);
+  cudart.def("cudaDeviceSetLimit", cudaDeviceSetLimit);
 #ifndef __HIP_PLATFORM_HCC__
   cudart.def("cudaProfilerInitialize", cudaProfilerInitialize);
 #endif
